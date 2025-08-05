@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Except these files/folders
+!.gitignore
+!README.md
+!ocr_service/
+!ocr_service/**
+!text_extractor/
+!text_extractor/**
+!docker-compose.yml

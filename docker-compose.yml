@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  text_extractor:
+    image: localhost:5000/text_extractor
+    ports:
+      - "8001:8000"
+    networks:
+      - appnet
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
+  ocr_service:
+    image: localhost:5000/ocr_service
+    ports:
+      - "8002:8000"
+    networks:
+      - appnet
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+
+networks:
+  appnet:
+    driver: overlay

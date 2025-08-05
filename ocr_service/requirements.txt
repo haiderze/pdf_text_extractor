@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pdf2image
+python-multipart
+paddleocr
+paddlepaddle
+scikit-learn
+tqdm
+pillow
+numpy
