@@ -12,8 +12,6 @@ A FastAPI-based application for extracting text from PDF files provided via URLs
 - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
 - [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 The PDF Text Extractor is designed to process PDF files from provided URLs and extract their text content using Optical Character Recognition (OCR). The application is split into two services:
